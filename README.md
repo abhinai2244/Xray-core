@@ -25,7 +25,7 @@ To get started with Xray-core, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   
+   https://github.com/abhinai2244/Xray-core.git
    ```
 
 2. **Navigate to the project directory:**
