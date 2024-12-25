@@ -1,3 +1,97 @@
+# Xray-core
+
+## Overview
+Xray-core is an advanced framework designed to streamline and manage network proxy solutions, offering enhanced security, scalability, and customization. It integrates multiple modular components to enable efficient and reliable data transmission. The project is built with flexibility and performance in mind, catering to developers and network administrators alike.
+
+## Features
+- **High Performance**: Optimized core components ensure low latency and high throughput.
+- **Modular Design**: Easily customizable with a modular architecture.
+- **Scalability**: Designed to handle a wide range of use cases, from small setups to large-scale deployments.
+- **Security**: Implements robust encryption and authentication mechanisms to secure communications.
+
+## Directory Structure
+- **`app/`**: Contains the main application logic, including entry points and core functionalities. This is where the core business logic is implemented.
+- **`common/`**: Houses shared utilities, helper functions, and constants that are reused across different modules.
+- **`core/`**: Implements the core functionalities of the system, including key algorithms, protocols, and data processing.
+- **`features/`**: Includes optional features and plugins that extend the core capabilities of the system.
+- **`infra/`**: Manages infrastructure-related configurations and tools, such as deployment scripts, CI/CD pipelines, and environment setups.
+- **`main/`**: Orchestrates the overall execution flow and integrates different modules of the project.
+- **`proxy/`**: Focuses on proxy-specific implementations, including protocols, routing mechanisms, and data handling.
+- **`testing/`**: Provides comprehensive testing scripts and frameworks to ensure the reliability and stability of the project.
+- **`.github/`**: Contains GitHub-specific configuration files such as workflows for automated testing and deployment.
+
+## Installation
+To get started with Xray-core, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd Xray-core
+   ```
+
+3. **Install dependencies:**
+   If the project uses Python:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   For other environments, follow the specific dependency management instructions provided in the documentation.
+
+4. **Set up the environment:**
+   Ensure all necessary environment variables and configurations are properly set by referring to the `infra/` or `.env.example` file.
+
+## Usage
+1. **Running the Application:**
+   Launch the main application with the following command:
+   ```bash
+   python main.py
+   ```
+   You can customize the execution by providing configuration files or command-line arguments.
+
+2. **Proxy Configuration:**
+   Configure the proxy settings by editing the configuration files in the `proxy/` directory. Ensure compatibility with your network setup.
+
+3. **Testing:**
+   Run tests to validate the setup:
+   ```bash
+   python -m unittest discover testing
+   ```
+
+4. **Deployment:**
+   Use the scripts in the `infra/` directory for deploying the application to production environments.
+
+## Development Guidelines
+To contribute to Xray-core, adhere to the following guidelines:
+
+1. **Code Style:**
+   - Follow the coding standards outlined in the `CONTRIBUTING.md` file.
+   - Ensure code is properly documented with comments and docstrings.
+
+2. **Testing:**
+   - Write unit tests for new features or changes.
+   - Ensure all tests pass before submitting a pull request.
+
+3. **Branching Strategy:**
+   - Use `main` for stable releases.
+   - Create feature branches for new functionalities and bugfix branches for resolving issues.
+
+## License
+This project is licensed under the [License Name], which permits [summarize permissions and limitations]. See the `LICENSE` file for complete details.
+
+## Roadmap
+- **Version 2.0:** Introduce support for additional protocols and enhanced scalability.
+- **Documentation:** Expand the documentation with tutorials and examples.
+- **Community Support:** Foster an active community by providing detailed contribution guidelines and support channels.
+
+## Contact
+For questions, feature requests, or reporting issues, reach out to:
+- **Email:** abhinaireddy2244@example.com
+- **GitHub Issues:** [GitHub Issues Page](https://github.com/username/Xray-core/issues)
+
+
 
 ## Installation
 
@@ -111,6 +205,9 @@ CGO_ENABLED=0 go build -o xray -trimpath -ldflags "-s -w -buildid=" ./main
 ### Reproducible Releases
 
 ```bash
+
+
+
 make
 ```
 
